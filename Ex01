@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        double baseRetangulo, alturaRetangulo;
+
+        Console.Write("Digite o valor da base do retângulo: ");
+        baseRetangulo = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Digite o valor da altura do retângulo: ");
+        alturaRetangulo = Convert.ToDouble(Console.ReadLine());
+
+        double areaRetangulo = baseRetangulo * alturaRetangulo;
+
+        Console.WriteLine($"A área do retângulo é: {areaRetangulo}");
+
+        Console.ReadKey();
+    }
+}

@@ -1,0 +1,33 @@
+using System;
+
+namespace CalculadoraTroco
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] valoresProdutos = new double[5];
+            
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write($"Digite o valor do {i+1}º produto: R$ ");
+                valoresProdutos[i] = double.Parse(Console.ReadLine());
+            }
+            
+            double total = 0;
+            foreach (double valor in valoresProdutos)
+            {
+                total += valor;
+            }
+
+            Console.Write("Digite o valor do pagamento: R$ ");
+            double pagamento = double.Parse(Console.ReadLine());
+
+            double troco = pagamento - total;
+
+            Console.WriteLine($"Troco a ser devolvido: R$ {troco:F2}");
+
+            Console.ReadLine();
+        }
+    }
+}

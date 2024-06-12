@@ -1,0 +1,24 @@
+using System;
+
+namespace CalculadoraAreaTriangulo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double baseTriangulo, alturaTriangulo, areaTriangulo;
+
+            Console.WriteLine("Digite o valor da base do triângulo:");
+            baseTriangulo = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor da altura do triângulo:");
+            alturaTriangulo = Convert.ToDouble(Console.ReadLine());
+
+            areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+
+            Console.WriteLine("A área do triângulo é: " + areaTriangulo);
+
+            Console.ReadLine();
+        }
+    }
+}

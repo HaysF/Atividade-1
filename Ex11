@@ -1,0 +1,25 @@
+using System;
+
+namespace CalculoPotencia
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Calculadora de Potência");
+            Console.WriteLine("-----------------------");
+
+            Console.Write("Digite o valor de X: ");
+            double x = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Digite o valor de Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            double resultado = Math.Pow(x, y);
+
+            Console.WriteLine($"{x} elevado a {y} é igual a {resultado}");
+
+            Console.ReadLine();
+        }
+    }
+}

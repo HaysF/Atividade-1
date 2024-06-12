@@ -1,0 +1,33 @@
+using System;
+
+namespace CalculoAreaQuadrado
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o valor da aresta do quadrado:");
+            string input = Console.ReadLine();
+            double aresta;
+
+            if (double.TryParse(input, out aresta))
+            {
+                if (aresta > 0)
+                {
+                    double area = Math.Pow(aresta, 2);
+                    Console.WriteLine($"A área do quadrado com aresta {aresta} é: {area}");
+                }
+                else
+                {
+                    Console.WriteLine("O valor da aresta deve ser maior que zero.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada inválida. Por favor, digite um número válido.");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
